@@ -7,17 +7,18 @@ const discountCard = prompt("ფასდაკლების ბილეთ�
 function AgeControl(age) {
   switch (true) {
     case age <= 10:
-      return 5;
+      price = 5;
       break;
     case age >= 10 && age <= 65:
-      return 15;
+      price = 15;
       break;
     case age > 65:
-      return 10;
+      price = 10;
       break;
     default:
       break;
   }
+  return price;
 }
 
 function ExtraPrice(price, movieType, timeOfTheDay) {
